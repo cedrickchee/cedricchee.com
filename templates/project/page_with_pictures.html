@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block content %}
+<pre>
+  Debugging info:
+  - section: "project"
+  - template: "project/page_with_pictures.html" extends "index.html"
+  - inside "{ block content }"
+</pre>
+
+<h1 class="title">
+  {{ page.title }}
+</h1>
+
+<div>
+  {{ page.content | safe }}
+</div>
+
+{% endblock content %}

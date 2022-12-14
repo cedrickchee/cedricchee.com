@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+
+{% block rss %}
+    {% if config.generate_feed %}
+        {% set rss_path = "tags/" ~ term.name ~ "/" ~ config.feed_filename %}
+        <link rel="alternate" type={% if config.feed_filename=="atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %}
+            title="Tag RSS" href="{{ get_url(path=rss_path, trailing_slash=false) | safe }}">
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    <div class="post">
+        <h1 class="post-title">
+            #{{ term.name }}
+            ({{ term.pages | length }} post{{ term.pages | length | pluralize }})
+        </h1>
+        
+        <a href="{{ config.base_url | safe }}/tags">
+            Show all tags
+        </a>
+
+        {{ post_macros::list_posts_by_year(pages=term.pages) }}
+    </div>
+{% endblock content %}

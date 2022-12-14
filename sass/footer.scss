@@ -1,0 +1,31 @@
+@import '__footer';
+
+.footer {
+  opacity: initial;
+
+  // New
+  // Since we hide post view navigation (lower/upper page button), we
+  // need to add back the border.
+  border-top: 1px solid var(--accent-alpha-70);
+  margin-top: 5em;
+  // END - New
+
+  &__inner {
+    flex-direction: column;
+    align-items: initial;
+    justify-content: initial;
+    opacity: .5;
+    
+    * > span {
+      font-size: 0.8em;
+    }
+  }
+
+  .copyright {
+    display: initial;
+  }
+
+  .license {
+    color: var(--light-color-secondary);
+  }
+}

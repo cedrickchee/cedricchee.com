@@ -1,0 +1,26 @@
+// Stolen from notion
+
+div.callout {
+  display: flex;
+  width: 100%;
+  border-radius: 0.19em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  background: var(--accent-alpha-20);
+  padding: 16px 16px 16px 12px;
+  margin-bottom: 20px; // Same as <p>
+  // (TODO: figure out why <p> also has margin-top 16 even though it isn't mentioned anywhere)
+}
+
+div.callout-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 8px;
+}
+
+.callout-body p {
+  margin-top: 0;
+  margin-bottom: 0;
+}

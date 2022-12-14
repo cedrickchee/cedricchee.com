@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <div class="post">
+        <h1 class="post-title">{{ terms | length }} tags</h1>
+        <p>{% for term in terms %} #<a href="#{{ term.name }}">{{ term.name }}</a> {% endfor %}</p>
+        
+        {%- for term in terms %}
+            <h2 id="{{ term.name }}"><a href="{{ term.permalink | safe }}">{{ term.name }}</a></h2>
+            
+            <ul>
+                {%- for page in term.pages %}
+                    {%- if page.draft %}
+                        {% continue %}
+                    {% endif -%}
+                    <li class="post-list">
+                        <a href="{{ page.permalink | safe }}">
+                            <span class="post-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
+                            <span class="post-list-title">{{ page.title }}</span>
+                        </a>
+                    </li>
+                {%- endfor %}
+            </ul>
+        {%- endfor %}
+    </div>
+{% endblock content %}

@@ -1,0 +1,28 @@
+[build]
+# This assumes that the Zola site is in a docs folder. If it isn't, you don't need
+# to have a `base` variable but you do need the `publish` and `command` variables.
+publish = "public"
+command = "make production-build"
+
+[build.environment]
+# Set the version name that you want to use and Netlify will automatically use it.
+ZOLA_VERSION = "0.16.1"
+
+# The magic for deploying previews of branches.
+# We need to override the base url with whatever url Netlify assigns to our
+# preview site.  We do this using the Netlify environment variable
+# `$DEPLOY_PRIME_URL`.
+
+[context.deploy-preview]
+command = "zola build --base-url $DEPLOY_PRIME_URL"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    cache-control = "public, max-age=300"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=63072000; includeSubdomains"
+    Content-Security-Policy = "default-src 'none'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; manifest-src 'self'; connect-src 'self'; form-action 'self'; script-src 'self' 'unsafe-inline'; img-src * data: cdn.cloudflare.com; frame-src 'self' www.youtube-nocookie.com player.vimeo.com; media-src 'self' data: cdn.cloudflare.com www.youtube-nocookie.com player.vimeo.com; font-src 'self' cdn.cloudflare.com cdn.jsdelivr.net fonts.gstatic.com; style-src 'self' 'unsafe-inline' cdn.cloudflare.com cdn.jsdelivr.net fonts.googleapis.com;"

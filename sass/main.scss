@@ -1,0 +1,149 @@
+@import '__main';
+
+body {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Monaco, Iosevka, Hack, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+// Override - make headings bigger and more different
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4, h5, h6 {
+  font-size: 1.10rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &:not(first-child) {
+    margin-top: 2.5em;
+  }
+}
+// END - Override - make headings bigger
+
+code {
+  padding: 0.125em 0.25em;
+  margin: 0;
+  border-radius: 0.19em;
+}
+
+pre {
+  position: relative;
+  padding: 0;
+
+  code {
+    display: block;
+    margin: 0;
+    padding: 20px;
+    background: none;
+    font-size: inherit;
+    overflow: auto;
+    white-space: unset;
+  }
+
+  // New styles for [styling codeblocks](https://www.getzola.org/documentation/content/syntax-highlighting/#styling-codeblocks)
+  table td {
+    padding: 0;
+  }
+
+  // The line number cells
+  table td:nth-of-type(1) {
+    text-align: right;
+    user-select: none;
+    padding-right: 1em;
+
+    // fix wierd cell spacing if table width is shorter than pre width
+    width: 0;
+  }
+
+  mark {
+    // If you want your highlights to take the full width.
+    display: block;
+    // The default background colour of a mark is bright yellow.
+    // This one is light green.
+    background-color: rgba(70,149,74,0.15) !important;
+    color: #fdf4c1;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    table-layout: unset;
+    margin: 0;
+  }
+
+  table, th, td {
+    border: none;
+    padding: 0;
+  }
+  // END - New styles
+
+  // New styles
+  &[data-lang] {
+    padding-top: 18px;
+  }
+  
+  &[data-lang]::before {
+    content: attr(data-lang);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--accent-alpha-20);
+    color: var(--accent-alpha-70);
+    padding: 0.2em 0.5em;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 0 0 0 6px;
+  }
+
+  @media (max-width: $phone-max-width) {
+    white-space: pre;
+
+    font-size: .85rem;
+
+    code {
+      padding: 12px;
+    }
+
+    &[data-lang] {
+      padding-top: 18px;
+
+      &::before {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  // END - New styles
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+
+// New - Heading anchor
+.heading-anchor {
+  color: var(--accent);
+  text-decoration: none;
+  margin-left: 10px;
+  visibility: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &:hover {
+    a {
+      visibility: visible;
+    }
+  }
+}
+// END - New - Heading anchor

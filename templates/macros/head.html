@@ -1,0 +1,76 @@
+{% macro head(config) %}
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="robots" content="noodp"/>
+    {%- if config.extra.author %}
+        <meta name="author" content="{{config.extra.author}}">
+    {% endif -%}
+
+    {# Accent color from CSS #}
+    {%- if config.extra.accent_color == "indigo" %}
+        <meta name="theme-color" content="#7C71DD">
+    {% else %}
+        {# default accent color is green #}
+        <meta name="theme-color" content="#78E2A0">
+    {% endif -%}
+
+    {%- if config.extra.production %}
+        {% set style = load_data(path="public/style.css", format="plain") -%}
+        <style>{{ style | safe }}</style>
+
+        {%- if config.extra.accent_color %}
+            {% set style = load_data(path="color/" ~ config.extra.accent_color ~ ".css", format="plain") -%}
+            <style>{{ style | safe }}</style>
+        {% else %}
+            {% set style = load_data(path="color/blue.css", format="plain") -%}
+            <style>{{ style | safe }}</style>
+        {% endif -%}
+
+        {%- if config.extra.background_color %}
+            {%- if config.extra.accent_color and config.extra.background_color != config.extra.accent_color %}
+                {% set style = load_data(path="color/background_" ~ config.extra.background_color ~ ".css", format="plain") -%}
+                <style>{{ style | safe }}</style>
+            {% endif -%}
+        {% endif -%}
+    {% else %}
+        <link rel="stylesheet" href="{{ get_url(path="style.css", trailing_slash=false) | safe }}">
+
+        {%- if config.extra.accent_color %}
+            <link rel="stylesheet" href="{{ get_url(path="color/" ~ config.extra.accent_color ~ ".css", trailing_slash=false) | safe }}">
+        {% else %}
+            <link rel="stylesheet" href="{{ get_url(path="color/blue.css", trailing_slash=false) | safe }}">
+        {% endif -%}
+
+        {%- if config.extra.background_color %}
+            {%- if config.extra.accent_color and config.extra.background_color != config.extra.accent_color %}
+                <link rel="stylesheet" href="{{ get_url(path="color/background_" ~ config.extra.background_color ~ ".css", trailing_slash=false) | safe }}">
+            {% endif -%}
+        {% endif -%}
+    {% endif -%}
+
+    {#- JS #}
+    {%- if config.extra.js_bundle %}
+        {%- if config.extra.js_hacks %}
+            {%- if config.extra.production %}
+                {% set script = load_data(path="hacks-footnotes.min.js", format="plain") -%}
+                <script defer>{{ script | safe }}</script>
+            {% else %}
+                <script defer src="{{ get_url(path='hacks-footnotes.min.js', trailing_slash=false, cachebust=true) | safe }}"{%- if config.extra.integrity %} integrity="sha384-{{ get_file_hash(path='hacks-footnotes.min.js', sha_type=384, base64=true) | safe }}"{%- endif %}></script>
+            {%- endif %}
+        {%- endif %}
+    {%- else %}
+        {#- no bundle #}
+        {%- if config.extra.js_hacks %}
+        <script defer src="{{ get_url(path='hacks-footnotes.js', trailing_slash=false, cachebust=true) | safe }}"{%- if config.extra.integrity %} integrity="sha384-{{ get_file_hash(path='hacks-footnotes.js', sha_type=384, base64=true) | safe }}"{%- endif %}></script>
+        {%- endif %}
+    {%- endif %}
+{#
+{%- if config.extra.use_full_hack_font %}
+    <link rel="stylesheet" href="{{ get_url(path="font-hack.css", trailing_slash=false) | safe }}">
+{% else %}
+    <link rel="stylesheet" href="{{ get_url(path="font-hack-subset.css", trailing_slash=false) | safe }}">
+{% endif -%}
+#}
+
+{% endmacro head %}

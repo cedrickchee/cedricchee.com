@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+    <meta name="description" content="Cedric Chee website"/>
+    <meta name="keywords" content="Hacking,Programming,Ranting"/>
+{% endblock %}
+
+{% block footer %}
+<footer class="footer">    
+    {#
+    <div class="header">
+        {% block header_menu %}
+        {{ menu_macros::menu(config=config, current_path=current_path) }}
+        {% endblock header_menu %}
+    </div>
+    #}
+
+    <div class="header">
+        {%- if config.extra.menu_items %}
+            {%- set menu_items = config.extra.menu_items -%}
+
+            <nav class="menu">
+                <ul class="menu__inner">
+                {%- for item in menu_items %}
+                    {% if item.show_in_footer %}
+                        <li>
+                            {%- if item.newtab -%}
+                                <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) | safe }}" target="_blank" rel="noopener noreferrer">{{ item.name | safe }}</a>
+                            {%- else -%}
+                                <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) | safe }}">{{ item.name | safe }}</a>
+                            {%- endif -%}
+                        </li>
+                    {% endif %}
+                {% endfor -%}
+                </ul>
+            </nav>
+        {% endif -%}        
+    </div>
+
+    <div class="footer__inner">
+        {%- if config.extra.copyright_html %}
+            <div class="copyright copyright--user">{{ config.extra.copyright_html | safe }}</div>
+        {% else %}
+            <div class="copyright">
+                {%- if config.extra.author %}
+                    <span>Copyright {{ config.extra.copyright_start }} - {{ date_macros::now_year() }} {{ config.extra.author }}.</span>
+                {% else %}
+                    <span>Copyright {{ config.extra.copyright_start }} - {{ date_macros::now_year() }}</span>
+                {% endif -%}
+            </div>
+        {% endif -%}
+        <div class="license">
+            <span>The content for this site is <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA 4.0</a> license.</span>
+        </div>
+        <div class="license">
+            <span>The <a href="https://github.com/cedrickchee/cedricchee.com" target="_blank">code for this site</a> is MIT.</span>
+        </div>
+    </div>
+</footer>
+{% endblock %}

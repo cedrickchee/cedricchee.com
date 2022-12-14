@@ -1,0 +1,143 @@
+{% import "macros/date.html" as date_macros -%}
+{% import "macros/head.html" as head_macros -%}
+{% import "macros/menu.html" as menu_macros -%}
+{% import "macros/post.html" as post_macros -%}
+
+<!DOCTYPE html>
+<html lang="{%- if config.default_language -%}{{ config.default_language }}{%- else -%}en{%- endif -%}">
+
+<head>
+    <title>{%- block title %}{{ config.title }}{% endblock title -%}</title>
+    {{ head_macros::head(config=config) }}
+
+    {% block rss %}
+        {% if config.generate_feed %}
+            <link rel="alternate" type={% if config.feed_filename=="atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="RSS" href="{{ get_url(path=config.feed_filename) | safe }}">
+        {% endif %}
+    {% endblock %}
+
+    {%- if config.extra.favicon %}
+        <link rel="shortcut icon" type="{{ config.extra.favicon_mimetype | default(value="image/x-icon") | safe }}" href="{{ config.extra.favicon | safe }}">
+    {% endif -%}
+
+    {%- if config.extra.favicon_all_devices %}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    {% endif -%}
+
+    {%- block extra_head %}
+    {% endblock extra_head -%}
+</head>
+
+<body class="">
+<div class="container">
+    {% block header %}
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                {%- if config.logo_home_link %}
+                    {% set logo_link = config.logo_home_link %}
+                {% else %}
+                    {% set logo_link = config.base_url %}
+                {% endif -%}
+                <a href="{{ logo_link | safe }}" style="text-decoration: none;">
+                    <div class="logo">
+                      {% block logo_content %}
+                        {%- if config.extra.logo_text %}
+                            {{ config.extra.logo_text }}
+                        {% else %}
+                            Retromin theme
+                        {% endif -%}
+                        {% endblock logo_content %}
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        {% block header_menu %}
+        {{ menu_macros::menu(config=config, current_path=current_path) }}
+        {% endblock header_menu %}
+    </header>
+    {% endblock header %}
+
+    <div class="content">
+        {% block content %}
+        {% if section.content %}
+        <div class="index-content {% if section.extra.framed -%}framed{%- endif -%}">
+            {{ section.content | safe }}
+        </div>
+        {% endif %}
+        <div class="posts">
+            <h1>{{ section.title }}</h1>
+
+            {%- if paginator %}
+                {%- set show_pages = paginator.pages -%}
+            {% else %}
+                {%- set show_pages = section.pages -%}
+            {% endif -%}
+
+            {%- for page in show_pages %}
+                <div class="post on-list">
+                    {{ post_macros::header(page=page) }}
+                    {{ post_macros::content(page=page, summary=true, description=true) }}
+                </div>
+            {% endfor -%}
+            <div class="pagination">
+                <div class="pagination__buttons">
+                {%- if config.extra.enable_post_listing_navigation %}
+                    {%- if paginator.previous %}
+                        <span class="button previous">
+                            <a href="{{ paginator.previous | safe }}">
+                                <span class="button__icon">←</span>&nbsp;
+                                <span class="button__text">newer</span>
+                            </a>
+                        </span>
+                    {% endif -%}
+                    {%- if paginator.next %}
+                        <span class="button next">
+                            <a href="{{ paginator.next | safe }}">
+                                <span class="button__text">older</span>&nbsp;
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    {% endif -%}
+                {% else %}
+                    <span class="button next">
+                        <a href="/archive/">
+                            <span class="button__text">view more posts</span>&nbsp;
+                            <span class="button__icon">→</span>
+                        </a>
+                    </span>
+                {% endif -%}
+                </div>
+            </div>
+        </div>
+        {% endblock content %}
+    </div>
+
+    {% block footer %}
+    <footer class="footer">
+        <div class="footer__inner">
+            {%- if config.extra.copyright_html %}
+                <div class="copyright copyright--user">{{ config.extra.copyright_html | safe }}</div>
+            {% else %}
+                <div class="copyright">
+                    {%- if config.extra.author %}
+                        <span>© {{ date_macros::now_year() }} {{ config.extra.author }}</span>
+                    {% else %}
+                        <span>© {{ date_macros::now_year() }} Powered by <a href="https://www.getzola.org/">Zola</a></span>
+                    {% endif -%}
+                </div>
+            {% endif -%}
+        </div>
+    </footer>
+    {% endblock footer %}
+
+</div>
+{%- block extra_body %}
+{% endblock extra_body -%}
+</body>
+
+</html>

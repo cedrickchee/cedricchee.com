@@ -1,0 +1,36 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: rgb(171, 161, 255);
+    --accent-alpha-70: rgba(232, 229, 255,.7);
+    --accent-alpha-20: rgba(124, 113, 221,.2);
+  
+    --background: #1F222A;
+    --color: white;
+    --border-color: rgba(255, 255, 255, .1);
+  
+    // New
+    // currently being the footer and footnote color
+    --light-color-secondary: rgba(255, 255, 255, 1.0);
+    // currently being the footnote highlight background and text color
+    --highlight-background: rgba(70, 149, 74, 0.15);
+    --highlight-text: #fdf4c1;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent: rgb(101, 79, 240);
+    --accent-alpha-70: rgba(101, 79, 240,.7);
+    --accent-alpha-20: rgba(101, 79, 240,.2);
+  
+    --background: #eeeeec;
+    --color: #333;
+    // strange, this variable is not being used anywhere
+    --border-color: rgba(255, 255, 255, .1);
+  
+    --light-color-secondary: rgba(0, 0, 0, 1.0);
+    // currently being the footnote highlight background and text color
+    --highlight-background: rgba(70, 149, 74, 0.15);
+    --highlight-text: var(--color);
+  }
+}

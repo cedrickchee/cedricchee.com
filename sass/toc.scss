@@ -1,0 +1,17 @@
+@mixin menu {
+  background: var(--background);
+  box-shadow: var(--shadow);
+  color: var(--color);
+  border: 0.125em solid;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  z-index: 99;
+}
+
+div.toc {
+	--shadow-color: var(--accent-alpha-70);
+  --shadow: 0.625em 0.625em var(--shadow-color);
+	@include menu;	
+	margin: 1.875em 0 3.125em 0 ;
+}

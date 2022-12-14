@@ -1,0 +1,22 @@
+{% import "macros/toc.html" as toc_macros -%}
+
+{% extends "index.html" %}
+
+{% block title %}{{ page.title }} — {{ config.title }}{% endblock title %}
+
+{% block content %}
+    <div class="post">
+        {{ post_macros::header(page=page) }}
+
+        {%- block ToC -%}
+            {# New ToC block #}
+
+            {%- if page.extra.ToC or config.extra.ToC -%}
+                {{ toc_macros::toc(t=page.toc) }}
+            {%- endif -%}
+        {%- endblock ToC -%}
+
+        {{ post_macros::content(page=page, summary=false, description=false) }}
+        {{ post_macros::earlier_later(page=page) }}
+    </div>
+{% endblock content %}

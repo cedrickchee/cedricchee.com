@@ -1,0 +1,25 @@
+@import "__header";
+
+// Colors
+$bg-color: var(--background);
+$dot-color: var(--accent);
+
+// Dimensions
+$dot-size: 3px;
+$dot-space: 9px;
+
+.header {
+  &__logo {
+    &:after {
+      // background: repeating-linear-gradient(90deg, var(--accent), var(--accent) 2px, transparent 0, transparent 16px);
+      // background:none;
+
+      // background-image: -webkit-linear-gradient(-90deg, transparent 0%, transparent 30%, $bg-color 30%, $bg-color 100%),
+      //             -webkit-linear-gradient(0deg, rgba(0,0,0,.1) 0%, rgba(0,0,0,.1) 70%, $dot-color 70%, $dot-color 100%);
+      // background-size:.50em .50em;
+      background-image: -webkit-linear-gradient(-90deg, transparent 0%, transparent 30%, $bg-color 30%, $bg-color 100%),
+                  -webkit-linear-gradient(0deg, rgba(0,0,0,.1) 0%, rgba(0,0,0,.1) 70%, $dot-color 70%, $dot-color 100%);
+      background-size:.25em .25em;
+    }
+  }
+}

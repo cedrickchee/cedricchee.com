@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+
+{% block content %}
+<pre>
+  Debugging info:
+  - section: "project"
+  - template: "project/section.html" extends "index.html"
+  - inside "{ block content }"
+</pre>
+
+<h1 class="title">
+  title = {{ section.title }}
+</h1>
+
+<article>
+  Content: {{ section.content | safe }}
+
+  <ul>
+    <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
+    {% for page in section.pages %}
+    <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+    {% endfor %}
+  </ul>  
+</article>
+
+{% set page = get_page(path="blog/2018-06-19-habits.md") %}
+<p>
+  Calling get_page(path="blog/2018-06-19-habits.md") --> {{ page.permalink }}
+</p>
+
+{% endblock content %}

@@ -1,0 +1,134 @@
+# The URL the site will be built for
+base_url = "https://cedricchee.netlify.app"
+title = "Chi Blog"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+# Optional: enable tags
+taxonomies = [
+  {name = "tags", feed = true},
+]
+
+# Language code
+# Internationalization / translation is not supported but you can set the HTML
+# language code for your site.
+# ------------------------------------------------------------------------------
+default_language = "en"
+
+# Override defaults
+# ------------------------------------------------------------------------------
+output_dir = "public"
+minify_html = true
+generate_feed = true
+feed_filename = "atom.xml"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "gruvbox-dark"
+
+smart_punctuation = true
+
+[link_checker]
+
+# Treat internal link problems as either "error" or "warn", default is "error"
+internal_level = "error"
+
+[slugify]
+# Internal links & deep linking
+# ------------------------------------------------------------------------------
+
+# While rendering the Markdown content, a unique id will automatically be
+# assigned to each heading. This id is created by converting the heading text to
+# a slug if anchors is set to "on" (the default).
+anchors = "on"
+
+# If paths is set to "safe", whitespaces are replaced by _ and these characters
+# are stripped: #, %, <, >, [, ], (, ), `, ^, {, |, }.
+paths = "safe"
+
+[extra]
+# Randomly change accent color and background color.
+# ------------------------------------------------------------------------------
+accent_color = "indigo"
+background_color = "black"
+
+# The "logo" text and what it links to
+# ------------------------------------------------------------------------------
+logo_text = "chi"
+
+# defaults to base_url
+logo_home_link = "/"
+
+# Footer's copyright author name
+# ------------------------------------------------------------------------------
+
+# Author name: when specified, modifies the default copyright text.
+author = "Chi"
+copyright_start = 2017
+
+# The menu is static
+# ------------------------------------------------------------------------------
+menu_items = [
+    # each of these is optional, name and url are required
+    # $BASE_URL is going to be substituted by base_url from configuration
+    {name = "home", url = "$BASE_URL", show_in_footer = true},
+    {name = "archive", url = "$BASE_URL/archive/", show_in_footer = false},
+
+    # tags should only be enabled if you have "tags" taxonomy
+    {name = "tags", url = "$BASE_URL/tags/", show_in_footer = false},
+    {name = "projects", url = "$BASE_URL/projects/", show_in_footer = false},
+    #{name = "talks", url = "$BASE_URL/talks/", show_in_footer = false},
+    # {name = "now", url = "$BASE_URL/now/", show_in_footer = false},
+    {name = "about", url = "$BASE_URL/about/", show_in_footer = false},
+    
+    # set newtab to true to make the link open in new tab
+    {name = "github", url = "https://github.com/cedrickchee", newtab = true, show_in_footer = true},
+    {name = "twitter", url = "https://twitter.com/cedric_chee", newtab = true, show_in_footer = true},
+    {name = "mastodon", url = "https://mstdn.io/@cedric_chee", newtab = true, show_in_footer = true},
+    {name = "linkedin", url = "https://www.linkedin.com/in/cedricchee", newtab = true, show_in_footer = true},
+    {name = "rss", url = "$BASE_URL/atom.xml", show_in_footer = true},
+]
+
+# Pagination
+# ------------------------------------------------------------------------------
+enable_post_view_navigation = false
+post_view_navigation_prompt = "Read more"
+enable_post_listing_navigation = false
+
+# Global favicon (applies to all pages) to the site
+# ------------------------------------------------------------------------------
+
+# favicon = "/favicon.png"
+# favicon_mimetype = "image/png"
+favicon_all_devices = true
+
+# Resource Files
+# ------------------------------------------------------------------------------
+integrity = true # setting this to false is useful for developing, should normally be true.
+js_bundle = true # multiple javascript files combined into a single file
+js_hacks = true
+
+# Home page
+# ------------------------------------------------------------------------------
+framed = true
+
+# Table of Contents (ToC)
+# ------------------------------------------------------------------------------
+# Generate ToC for all blog posts.
+# Table of Contents can be generated for individual blog posts
+# by adding `ToC = true` in [extra] section in frontmatter
+
+# ToC = true
+
+# Build configurations
+# ------------------------------------------------------------------------------
+
+# A way to have more control of the build -- run this logic if we're in
+# development, otherwise we're in production/CI.
+production = true
