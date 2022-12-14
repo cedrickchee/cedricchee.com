@@ -67,7 +67,7 @@ ToC = false
 	* Types: Smart client (hard to get it perfect), Hardware load balancers ($$$ but reliable), Software load balancers (hybrid - works for most systems)
 
 <p align="center">
-  <img src="http://lethain.com/static/blog/intro_arch/load_balance.png" alt="Load Balancing"/>
+  <img src="https://lethain.com/static/blog/intro_arch/load_balance.png" alt="Load Balancing"/>
 </p>
 
 * **Database replication**
@@ -82,7 +82,7 @@ ToC = false
 	* Adding a platform layer can be a way to reuse your infrastructure for multiple products or interfaces (a web application, an API, an iPhone app, etc) without writing too much redundant boilerplate code for dealing with caches, databases, etc.
 
 <p align="center">
-  <img src="http://lethain.com/static/blog/intro_arch/platform_layer.png" alt="Platform Layer"/>
+  <img src="https://lethain.com/static/blog/intro_arch/platform_layer.png" alt="Platform Layer"/>
 </p>
 	
 ## Key topics for designing a system
@@ -155,17 +155,17 @@ ToC = false
 
 [How to rock a systems design interview](http://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview/)
 
-[System Design Interviewing](http://www.hiredintech.com/system-design/)
+[System Design Interviewing](https://www.hiredintech.com/system-design/)
 
-[Scalability for Dummies](http://www.lecloud.net/tagged/scalability)
+[Scalability for Dummies](https://www.lecloud.net/tagged/scalability)
 
-[Introduction to Architecting Systems for Scale](http://lethain.com/introduction-to-architecting-systems-for-scale/)
+[Introduction to Architecting Systems for Scale](https://lethain.com/introduction-to-architecting-systems-for-scale/)
 
-[Scalable System Design Patterns](http://horicky.blogspot.com/2010/10/scalable-system-design-patterns.html)
+[Scalable System Design Patterns](https://horicky.blogspot.com/2010/10/scalable-system-design-patterns.html)
 
-[Scalable Web Architecture and Distributed Systems](http://www.aosabook.org/en/distsys.html)
+[Scalable Web Architecture and Distributed Systems](https://www.aosabook.org/en/distsys.html)
 
-[What is the best way to design a web site to be highly scalable?](http://programmers.stackexchange.com/a/108679/62739)
+[What is the best way to design a web site to be highly scalable?](https://programmers.stackexchange.com/a/108679/62739)
 
 [How web works?](https://github.com/vasanthk/how-web-works)
 
