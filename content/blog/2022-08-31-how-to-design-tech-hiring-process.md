@@ -177,20 +177,38 @@ candidates.
 
 All of this is IMHO, of course, and I only speak for myself here.
 
+---
+
 [^1]: [Don’t Do Interviews, Do Discussions!](https://thinkingthrough.substack.com/p/dont-do-interviews-do-discussions)
+
 [^2]: [Stop requiring specific technology experience for senior-plus engineers](https://mikemcquaid.com/stop-requiring-specific-technology-experience-for-senior-plus-engineers/)
+
 [^3]: [Tech Sector Job Interviews Assess Anxiety, Not Software Skills](https://news.ncsu.edu/2020/07/tech-job-interviews-anxiety/)
+
 [^4]: [Five takeaways from looking for a new senior role in tech](https://philcalcado.com/2021/12/20/job_hunt.html)
+
 [^5]: [On Leaving Facebook](https://frantic.im/leaving-facebook/)
+
 [^6]: [How to Freaking Find Great Developers By Having Them Read Code](https://freakingrectangle.com/2022/04/15/how-to-freaking-hire-great-developers/)
+
 [^7]: [The best engineering interview question I’ve ever gotten, Part 1](https://quuxplusone.github.io/blog/2022/01/06/memcached-interview/)
+
 [^8]: [Pioneering the developer advocate role, with Cassidy Williams, Director of Developer Experience at Netlify](https://about.sourcegraph.com/podcast/cassidy-williams)
+
 [^9]: [The One Method I’ve Used to Eliminate Bad Tech Hires](https://mattermark.com/the-one-method-ive-used-to-eliminate-bad-tech-hires/)
+
 [^10]: [My worst tech interview experience](https://www.jessesquires.com/blog/2021/12/01/my-worst-tech-interview-experience/)
+
 [^11]: [Ten years of experience, still failing phone screens](https://kevin.burke.dev/kevin/phone-screens-broken/)
+
 [^12]: [6 Red Flags I Saw While Doing 60+ Technical Interviews in 30 Days](https://meekg33k.dev/6-red-flags-i-saw-while-doing-60-technical-interviews-in-30-days)
+
 [^13]: [Why coding interviews aren't all that bad](https://eli.thegreenplace.net/2022/why-coding-interviews-arent-all-that-bad/)
+
 [^14]: [20 Things I’ve Learned in my 20 Years as a Software Engineer](https://www.simplethread.com/20-things-ive-learned-in-my-20-years-as-a-software-engineer/)
+
 [^15]: [Why do companies insist on using algorithmic code tests when hiring? When this is not what they do on a day to day basis](https://r.nf/r/golang/comments/lygtgc/remote_role_interviews/)
+
 [^16]: [Ask HN: What do companies WITHOUT a whiteboard interview ask?](https://news.ycombinator.com/item?id=24733700)
+
 [^17]: [Hiring Developers: How to avoid the best](https://news.ycombinator.com/item?id=28431962)
