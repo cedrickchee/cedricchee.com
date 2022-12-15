@@ -131,4 +131,4 @@ framed = true
 
 # A way to have more control of the build -- run this logic if we're in
 # development, otherwise we're in production/CI.
-production = true
+production = false

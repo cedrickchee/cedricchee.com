@@ -19,9 +19,12 @@ All my "Year in Review" RescueTime reports from 2017 to 2020.
 
 ## 2020
 
-<a href="https://drive.google.com/uc?export=view&id=19WewRBG_eN2E4zEgqD3tPGDKmE7FYgcv">
-  <img src="https://drive.google.com/uc?export=view&id=19WewRBG_eN2E4zEgqD3tPGDKmE7FYgcv" style="width: 800px; max-width: 100%; height: auto" title="Click for the larger version." />
-</a>
+{{ figure(src="2020_year_in_review_rescuetime_report.png",
+       style="width: 100%;",
+       position="center"
+       caption_position="center",
+       caption="2020 report"
+       caption_style="font-weight: normal; font-style: normal;") }}
 
 [2020 full report](https://www.rescuetime.com/year-in-review/2020/B6374EVr6ViivSq0BN92Wl1v2pn_hbmhKuyW6p3I)
 
@@ -29,9 +32,12 @@ All my "Year in Review" RescueTime reports from 2017 to 2020.
 
 ## 2019
 
-<a href="https://drive.google.com/uc?export=view&id=1BCUZMzHzVcj0vSbDeQF0KKPg_m_zLEGS">
-  <img src="https://lh3.googleusercontent.com/d/1BCUZMzHzVcj0vSbDeQF0KKPg_m_zLEGS=s800" style="width: 800px; max-width: 100%; height: auto" title="Click for the larger version." />
-</a>
+{{ figure(src="2019_year_in_review_rescuetime_report.png",
+       style="width: 100%;",
+       position="center"
+       caption_position="center",
+       caption="2019 report"
+       caption_style="font-weight: normal; font-style: normal;") }}
 
 [2019 full report](https://www.rescuetime.com/year-in-review/2019/B6374EVr6ViivSq0BN92Wl1v2pn_hbmhKuyW6p3I)
 
@@ -39,9 +45,12 @@ All my "Year in Review" RescueTime reports from 2017 to 2020.
 
 ## 2018
 
-<a href="https://drive.google.com/uc?export=view&id=1SrCrWL4DS0XuRv1k_KYVP9RxtzTC16yq">
-  <img src="https://lh3.googleusercontent.com/d/1SrCrWL4DS0XuRv1k_KYVP9RxtzTC16yq=s800" style="width: 800px; max-width: 100%; height: auto" title="Click for the larger version." />
-</a>
+{{ figure(src="2018_year_in_review_rescuetime_report.png",
+       style="width: 100%;",
+       position="center"
+       caption_position="center",
+       caption="2018 report"
+       caption_style="font-weight: normal; font-style: normal;") }}
 
 [2018 full report](https://www.rescuetime.com/year-in-review/2018/B6374EVr6ViivSq0BN92Wl1v2pn_hbmhKuyW6p3I)
 
