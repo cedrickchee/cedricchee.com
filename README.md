@@ -1,8 +1,6 @@
-<p align="center">
-    <h2 align="center">Cedric Chee's Website - <a href="https://cedricchee.com">Check it out!</a> · [![Netlify Status](https://api.netlify.com/api/v1/badges/4f5a1a87-d60c-49da-a843-6c3ce38ab0d7/deploy-status)](https://app.netlify.com/sites/cedricchee/deploys)</h2>
-</p>
+# Cedric Chee's Website — [Check it out!](https://cedricchee.com) · ![Netlify Status](https://api.netlify.com/api/v1/badges/4f5a1a87-d60c-49da-a843-6c3ce38ab0d7/deploy-status)
 
-<p align="center">Source code for my personal website and blog. Crafted with ♥</p>
+Source code for my personal website and blog. Crafted with :heart:
 
 ---
 
