@@ -7,6 +7,7 @@ date = 2022-08-31T15:00:00Z
 #slug = "future post"
 #path = "/launch"
 #draft = true
+aliases = ["2022/08/31/how-to-design-tech-hiring-process"]
 
 [taxonomies]
 tags = ["hiring", "tech", "interview", "broken", "opinion"]

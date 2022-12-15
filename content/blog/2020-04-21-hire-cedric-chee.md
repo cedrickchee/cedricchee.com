@@ -7,6 +7,7 @@ date = 2020-04-21T04:09:00Z
 #slug = "future post"
 #path = "/launch"
 #draft = true
+aliases = ["2020/04/21/hire-cedric-chee"]
 
 [taxonomies]
 tags = ["job hunt", "hiring", "remote work"]
