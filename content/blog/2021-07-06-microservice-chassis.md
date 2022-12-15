@@ -49,7 +49,7 @@ The following are some resources that helped me throughout my Dapr learning.
 - [Dapr is service mesh done right](https://go.forrester.com/blogs/dapr-service-mesh-done-right/)
 - [The Future of Cloud Native Applications With OAM and DAPR](https://www.hugobarona.com/the-future-of-cloud-native-applications-with-oam-and-dapr/)
 - Integrate DAPR workloads into OAM
-  - https://www.alibabacloud.com/blog/unified-application-management-architecture-with-oam_596361
+  - [Unified Application Management Architecture with OAM](https://www.alibabacloud.com/blog/unified-application-management-architecture-with-oam_596361)
   - [How to model a native Istio application using OAM (kubevela)?](https://github.com/oam-dev/kubevela/issues/1122#issuecomment-789512373). [Code + microservices app demo powered by OAM](https://github.com/oam-dev/catalog/tree/master/applications/istio/bookinfo)
 
 What's your hunch? Will Dapr adoption grow in the long run?
