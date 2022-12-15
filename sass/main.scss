@@ -185,4 +185,11 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
+
+// Hack - hide heading anchor when inside framed.
+.no-anchor {
+  a {
+    display: none;
+  }
+}
 // END - New - Heading anchor
