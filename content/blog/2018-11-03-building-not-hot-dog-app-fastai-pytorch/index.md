@@ -127,7 +127,7 @@ Accuracy here refers to how accurately the "kid" (Model) recognises the given im
 
 [Cedric Chee](https://medium.com/u/979552fb320d), who is another fast.ai International Fellow in our Asia virtual study group and fellow student in the fast.ai community has developed the major portions required for Step 2 and 3 of our pipeline. Please checkout the mobile app demo:
 
-<iframe width="560" height="310" src="https://www.youtube.com/watch?v=TYkoaVNCMos" frameborder="0" allowfullscreen></iframe>
+{{ youtube(id="TYkoaVNCMos", autoplay=false, class="youtube") }}
 
 Jupyter notebooks that will walk you through every step:
 
