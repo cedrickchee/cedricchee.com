@@ -1,5 +1,5 @@
 +++
-title = "Liveview and React in Contrast"
+title = "LiveView and React in Contrast"
 #description = "This is a showcase post."
 date = 2021-11-24T17:08:00Z
 #updated = 2022-11-10
@@ -22,7 +22,7 @@ Hey what's up? I played with [Remix](https://remix.run) shortly after they open-
 Today I'm writing in response to this Fly.io's blog post, ["How We Got to LiveView](https://fly.io/blog/how-we-got-to-liveview/).
 I want to update my view on the two sides of the same coin — different solutions solving the same problem in web development.
 
-## Phoenix Liveview
+## Phoenix LiveView
 
 These paragraphs from the blog post caught my attention:
 
