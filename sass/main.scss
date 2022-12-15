@@ -28,6 +28,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 // END - Override - make headings bigger
 
+img {
+  border: 0.3em solid var(--accent);
+}
+
+// Fix the figure and not the img positioning
+figure {
+  img {
+    border: 0.3em solid var(--accent);
+  }
+
+  &.left {
+    margin-right: auto;
+  }
+
+  &.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.right {
+    margin-left: auto;
+  }
+
+  figcaption {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    margin-top: 5px;
+    background: none;
+    color: var(--color);
+  }
+}
+
 code {
   padding: 0.125em 0.25em;
   margin: 0;
