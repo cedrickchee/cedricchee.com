@@ -24,6 +24,13 @@ h4, h5, h6 {
 h1, h2, h3, h4, h5, h6 {
   &:not(first-child) {
     margin-top: 2.5em;
+  
+    // fix spacing in heading containing hyperlink
+    &:not(.post-title) {
+      a {
+        margin-left: 0.7em;
+      }
+    }
   }
 }
 // END - Override - make headings bigger

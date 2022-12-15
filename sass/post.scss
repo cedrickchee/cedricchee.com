@@ -39,6 +39,13 @@
     border-bottom: none;
   }
 
+  // Hack
+  &:not(.on-list) {
+    .post-title {
+      pointer-events: none;
+    }
+  }
+
   %tags {
     a {
       text-decoration: none;
