@@ -66,9 +66,12 @@ ToC = false
 	* Public servers of a scalable web service are hidden behind a load balancer.  This load balancer evenly distributes load (requests from your users) onto your group/cluster of  application servers.
 	* Types: Smart client (hard to get it perfect), Hardware load balancers ($$$ but reliable), Software load balancers (hybrid - works for most systems)
 
-<p align="center">
-  <img src="https://lethain.com/static/blog/intro_arch/load_balance.png" alt="Load Balancing"/>
-</p>
+{{ figure(src="https://lethain.com/static/blog/intro_arch/load_balance.png",
+       style="width: 80%;",
+       position="center"
+       caption_position="center",
+       caption="Load Balancing"
+       caption_style="font-weight: normal; font-style: normal;") }}
 
 * **Database replication**
 	* Database replication is the frequent electronic copying data from a database in one computer or server to a database in another so that all users share the same level of information. The result is a distributed database in which users can access data relevant to their tasks without interfering with the work of others. The implementation of database replication for the purpose of eliminating data ambiguity or inconsistency among users is known as normalization.
@@ -81,9 +84,12 @@ ToC = false
 	* Separating the platform and web application allow you to scale the pieces independently. If you add a new API, you can add platform servers without adding unnecessary capacity for your web application tier.
 	* Adding a platform layer can be a way to reuse your infrastructure for multiple products or interfaces (a web application, an API, an iPhone app, etc) without writing too much redundant boilerplate code for dealing with caches, databases, etc.
 
-<p align="center">
-  <img src="https://lethain.com/static/blog/intro_arch/platform_layer.png" alt="Platform Layer"/>
-</p>
+{{ figure(src="https://lethain.com/static/blog/intro_arch/platform_layer.png",
+       style="width: 100%;",
+       position="center"
+       caption_position="center",
+       caption="Platform Layer"
+       caption_style="font-weight: normal; font-style: normal;") }}
 	
 ## Key topics for designing a system
 

@@ -59,15 +59,23 @@ Elasticsearch divides each index into shards, which can migrate between servers 
 
 Figure 1 llustrates the two perspectives.
 
-![Figure 1](https://user-images.githubusercontent.com/145605/123762266-37d19000-d8f5-11eb-98ae-aff0c20cb28c.png)
-Figure 1: An Elasticsearch cluster from the application's and administrator's points of view
+{{ figure(src="es-cluster-from-admin-pov.png",
+       style="width: 100%;",
+       position="center"
+       caption_position="center",
+       caption="Figure 1: An Elasticsearch cluster from the application's and administrator's points of view"
+       caption_style="font-weight: normal; font-style: normal;") }}
 
 ### Understanding the logical layout: documents, types, and indices
 
 When you index a document in Elasticsearch, you put it in a type within an index. You can see this idea in figure 2, where the get-together index contains two types: event and group. Those types contain documents, such as the one labeled 1. The label `1` is that document's ID.
 
-![Figure 2](https://user-images.githubusercontent.com/145605/123762258-36a06300-d8f5-11eb-8a81-3933bfeb6f12.png)
-Figure 2 Logical layout of data in Elasticsearch: how an application sees data
+{{ figure(src="es-logical-layout-data.png",
+       style="width: 100%;",
+       position="center"
+       caption_position="center",
+       caption="Figure 2 Logical layout of data in Elasticsearch: how an application sees data"
+       caption_style="font-weight: normal; font-style: normal;") }}
 
 ## Learning Resources
 

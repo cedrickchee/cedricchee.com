@@ -15,7 +15,12 @@ tags = ["react"]
 ToC = false
 +++
 
-![React 18 Working Group](https://user-images.githubusercontent.com/145605/121367505-f17bb780-c96c-11eb-814b-d4e9d01fb1a4.png)
+{{ figure(src="react-18-wg.png",
+       style="width: 100%;",
+       position="center"
+       caption_position="center",
+       caption="React 18 Working Group"
+       caption_style="font-weight: normal; font-style: normal;") }}
 
 Hey!
 

@@ -105,7 +105,9 @@ Accuracy here refers to how accurately the "kid" (Model) recognises the given im
 
 - Since the data is already separated into two folders, fast.ai supports this "ImageNet" like data and we can create our data model right away.
 
-![Jupyter notebook](jupyter-nb.png)
+{{ image(src="jupyter-nb.png",
+         position="center",
+         style="width: 90%") }}
 
 - We download our kid's brain: ResNet34-Pretrained Weights.
 - We let the model run for 38 seconds and finally we have a model with 87% accuracy.
@@ -114,7 +116,9 @@ Accuracy here refers to how accurately the "kid" (Model) recognises the given im
     In under a day-we have an idea of what should be a good or possible accuracy given our problem.
 - How good is 87%?
 
-![Jupyter notebook results](jupyter-nb-results.png)
+{{ image(src="jupyter-nb-results.png",
+         position="center",
+         style="width: 90%") }}
 
 - The first and third images and final images are confusing obviously, so there are some faults in the data.
 - We've decided that this is a good enough baseline and we can move onto step 2.
