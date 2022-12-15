@@ -12,7 +12,7 @@ insert_anchor_links = "right"
 framed = true
 +++
 
-# Software Engineer, Backend Developer
+# Backend Software Engineer {#manual .header .no-anchor}
 
 👋 I'm Cedric Chee. I've been a [software engineer](https://github.com/cedrickchee), AI engineer, writer,
 and [entrepreneur](https://www.linkedin.com/posts/cedricchee_today-we-are-crossing-the-finishing-line-activity-6517235249297096704-9wo8).
