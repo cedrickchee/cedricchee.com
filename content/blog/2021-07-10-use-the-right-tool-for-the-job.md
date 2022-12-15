@@ -27,8 +27,7 @@ The issue I think we miss when people say:
 > 
 > "why choose microservice architecture when you should start with a monolith".
 
-Today, I revisit this 2017 post, "You Are Not Google": http://archive.today/qBtec
-by Bradfield School of Computer Science to remind myself.
+Today, I revisit this 2017 post, ["You Are Not Google"](http://archive.today/qBtec) by Bradfield School of Computer Science to remind myself.
 
 The point of this post was to tell you to **think** and to actually **understand the problem** you 
 are trying to solve. It's NOT the article intention to tell you to ignore any big tech products
