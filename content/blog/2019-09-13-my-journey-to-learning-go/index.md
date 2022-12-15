@@ -27,4 +27,9 @@ A place to keep some of my Go programming flashback.
 
 - My first serious (and fun) foray into Go programming dated back to Sept 2015. I remember I was using version 1.5.1 for some weekend hacks (hobby projects).
 
-  ![](https://i.imgur.com/nqN1mfS.png)
+    {{ figure(src="terminal.png",
+        style="width: 100%;",
+        position="center"
+        caption_position="center",
+        caption="Terminal"
+        caption_style="font-weight: normal; font-style: normal;") }}

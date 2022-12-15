@@ -19,18 +19,38 @@ A new super(hu)man powers born!
 
 I haz a new superman powers, TensorFlow. Lit!
 
-![TensorFlow tee](https://i.imgur.com/b3QEFhJ.jpg)
+{{ figure(src="tee-front.jpg",
+    style="width: 100%;",
+    position="center"
+    caption_position="center",
+    caption="TensorFlow tee"
+    caption_style="font-weight: normal; font-style: normal;") }}
 
 At Singapore second [A.I. Day 2019](https://www.eventbrite.sg/e/ai-day-research-prototype-production-tickets-44750797841)
 
-![A.I. Day](https://i.imgur.com/jnGA6Mr.jpg).
+{{ figure(src="tee-back.jpg",
+    style="width: 100%;",
+    position="center"
+    caption_position="center",
+    caption="A.I. Day tee (back)"
+    caption_style="font-weight: normal; font-style: normal;") }}
 
 TF 'celebrity', [@DynamicWebPaige](https://mobile.twitter.com/DynamicWebPaige) kicks off AI Day with style ([those Keras unicorn](https://twitter.com/fchollet/status/1101668542255001601)) at Google Singapore. It's full house!
 
-![kicks off AI Day](https://i.imgur.com/aWfI3yr.jpg)
+{{ figure(src="keynote.jpg",
+    style="width: 100%;",
+    position="center"
+    caption_position="center",
+    caption="Kicks off AI Day"
+    caption_style="font-weight: normal; font-style: normal;") }}
 
 Oh, luckily it's Saturday. The audience is ready for more BERTology. Dr Martin Andrews talked about XLNet.
 
-![XLNet](https://i.imgur.com/qiAEGOC.jpg)
+{{ figure(src="xlnet.jpg",
+    style="width: 100%;",
+    position="center"
+    caption_position="center",
+    caption="XLNet"
+    caption_style="font-weight: normal; font-style: normal;") }}
 
 Who else had lotsa fun?

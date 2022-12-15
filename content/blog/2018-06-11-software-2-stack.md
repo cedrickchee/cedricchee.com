@@ -18,7 +18,7 @@ ToC = false
 My quick notes for the "Building the Software 2.0 Stack" talk by Andrej Karpathy
 at Train AI 2018 conference - machine learning for a human world.
 
-<iframe width="560" height="310" src="https://vimeo.com/272696002" frameborder="0" allowfullscreen></iframe>
+{{ vimeo(id="272696002", class="vimeo") }}
 
 ## Training Datasets
 
