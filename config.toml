@@ -69,7 +69,7 @@ logo_home_link = "/"
 # ------------------------------------------------------------------------------
 
 # Author name: when specified, modifies the default copyright text.
-author = "Chi"
+author = "Cedric Chee"
 copyright_start = 2017
 
 # The menu is static
