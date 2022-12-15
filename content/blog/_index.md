@@ -5,4 +5,5 @@ template = "index.html"
 page_template = "page.html"
 insert_anchor_links = "right"
 transparent = true
+redirect_to = "/"
 +++
