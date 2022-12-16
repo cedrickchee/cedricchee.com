@@ -82,7 +82,7 @@ menu_items = [
 
     # tags should only be enabled if you have "tags" taxonomy
     {name = "tags", url = "$BASE_URL/tags/", show_in_footer = false},
-    {name = "projects", url = "$BASE_URL/projects/", show_in_footer = false},
+    {name = "projects", url = "https://github.com/cedrickchee#projects", newtab = true, show_in_footer = false},
     #{name = "talks", url = "$BASE_URL/talks/", show_in_footer = false},
     # {name = "now", url = "$BASE_URL/now/", show_in_footer = false},
     {name = "about", url = "$BASE_URL/about/", show_in_footer = false},
