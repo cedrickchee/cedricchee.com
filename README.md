@@ -24,7 +24,7 @@ Source code for my personal website and blog. Crafted with :heart:
 
 - Fast and lightweight, only ~10kB CSS before the content, images, and videos
 - Total page weight ~7kB (gzip compressed)
-- No unncessary JavaScript, no Web bundler :sunglasses:
+- No unnecessary JavaScript, no Web bundler :sunglasses:
 - Near perfect [Lighthouse](https://pagespeed.web.dev/report?url=https%3A%2F%2Fcedricchee.com%2F), [YellowLabTools](https://yellowlab.tools/result/ggcp8oz56d), and [Observatory](https://observatory.mozilla.org/analyze/cedricchee.com) scores (need 11ty improvements)
 - Netlify for hosting and deployment
 
@@ -184,3 +184,7 @@ I use GitHub Issues as the official bug tracker. Please search [existing issues]
 
 * Code: [MIT](https://cedrickchee.mit-license.org/) Copyright Cedric Chee
 * Content: [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](http://creativecommons.org/licenses/by-sa/4.0/)
+
+---
+
+**Aside:** _this is version 2 of my personal website [project here](https://github.com/cedrickchee/personal-website)._
