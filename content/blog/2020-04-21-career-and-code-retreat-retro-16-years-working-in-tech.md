@@ -7,6 +7,7 @@ date = 2020-04-21T05:09:00Z
 #slug = "future post"
 #path = "/launch"
 #draft = true
+aliases = ["2020/04/21/career-and-code-retreat-retro-16-years-working-in-tech"]
 
 [taxonomies]
 tags = ["career", "code retreat", "retrospective", "fast.ai", "deep learning", "data science"]
@@ -35,7 +36,7 @@ When I moved to Singapore in 2006, my main objective is to start my own tech sta
 
 ### Career as a Full Stack Software Engineer
 
-I am a full stack software engineer all along (funnily, even before full stack title being a thing now). I mostly work on web developments in the early days of my career. I learned iOS (and Objective-C) and Android (Java) mobile development not long after the first iPhone and AppStore launched together with a group of people who started CocoaHeads meetup, buUuk and some worked at Apple now. I've [blogged about the iPhone 3G launch](https://cedrickchee.blogspot.com/2008/08/singtel-has-confirmed-to-launch-iphone.html) and my first foray into Android development in 2010 after attended the [Developer Lab by Google](https://cedrickchee.tumblr.com/post/18008767194/my-android-developer-lab-tag-on-flickr-looking) in my abandon blogs.
+I am a full stack software engineer all along (funnily, even before full stack title being a thing now). I mostly work on web developments in the early days of my career. I learned iOS (and Objective-C)[^1] and Android (Java) mobile development not long after the first iPhone and AppStore launched together with a group of people who started CocoaHeads meetup, buUuk and some worked at Apple now. I've [blogged about the iPhone 3G launch](https://cedrickchee.blogspot.com/2008/08/singtel-has-confirmed-to-launch-iphone.html) and my first foray into Android development in 2010 after attended the [Developer Lab by Google](https://cedrickchee.tumblr.com/post/18008767194/my-android-developer-lab-tag-on-flickr-looking) in my abandon blogs.
 
 #### Front-end Development
 
@@ -156,3 +157,7 @@ I'm back on the job market! I just lost my freelance job, and I was living witho
 Contact info and details [here](https://cedricchee.com/2020/04/21/hire-cedric-chee/).
 
 That's it for now. Thank you and take care.
+
+---
+
+[^1]: [Testing the 2 most-wanted features of iPhone OS 3.0 (2009)](https://cedrickchee.blogspot.com/2009/06/two-most-wanted-iphone-os-30-features.html)
