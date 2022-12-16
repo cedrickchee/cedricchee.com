@@ -65,6 +65,18 @@
   }
 }
 
+// Unique
+.tags {  
+  h2 {
+    // fix spacing in heading containing hyperlink
+    &:not(.post-title) {
+      a {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
 /* Tables
 ================================== */
 $bw: 3px;  // border width
@@ -93,6 +105,8 @@ $breakpoint: 40em;
   .first  { width: 17%; padding-left: 0; color: var(--accent-alpha-70); }
   .first::before { content: "- "; color: var(--accent); }
   .second  { width: 83%; }
+  .larger { width: 23%; }
+  .smaller { width: 77%; }
 }
 
 /* Responsive
