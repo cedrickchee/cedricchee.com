@@ -63,92 +63,49 @@
   .post-date {
     margin-right: 2.0em;
   }
-
-  // a {
-  //   display: flex;
-  // }
 }
-
-// Experiment
-.post {
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-  // width: 50%;
-  // border: 1px solid #000;
-  // margin: 1em 0;
-  
-  ul {
-    display: flex;
-    flex-direction: row; // <-- not needed as this is the default behavior
-    // flex-wrap: wrap;
-    width: 100%;
-    padding-left: 0;
-  }
-
-  li {
-    list-style: none;
-    display: inline-block;
-    width: calc(100% / 3);
-    height: 120px;
-    text-align: center;
-  }
-}
-
-/* Variables
-================================== */
-$bw: 3px;  // border width
-
 
 /* Tables
 ================================== */
-.Rtable {
+$bw: 3px;  // border width
+$breakpoint: 40em;
+
+.table {
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 3em 0;
   padding: 0;
-}
-.Rtable-cell {
-  box-sizing: border-box;
-  flex-grow: 1;
-  width: 100%;  // Default to full width
-  padding: 0.8em 1.2em;
-  overflow: hidden; // Or flex might break
-  list-style: none;
-  // border: solid $bw white;
-  // background: fade(slategrey,20%);
-  > h1, > h2, > h3, > h4, > h5, > h6 { margin: 0; }
+
+  &-cell {
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 100%;  // Default to full width
+    padding: 0.8em 1.2em;
+    overflow: hidden; // Or flex might break
+    list-style: none;
+  }
 }
 
 /* Table column sizing
 ================================== */
-.Rtable--2cols > .Rtable-cell  { width: 50%; }
-.Rtable--2cols > .first  { width: 16%; padding-left: 0; color: var(--accent-alpha-70); }
-.Rtable--2cols > .first::before { content: "- "; color: var(--accent); }
-.Rtable--2cols > .second  { width: 84%; }
-
-$breakpoint: 640px;
+.table--2cols {
+  > .table-cell  { width: 50%; }
+  .first  { width: 17%; padding-left: 0; color: var(--accent-alpha-70); }
+  .first::before { content: "- "; color: var(--accent); }
+  .second  { width: 83%; }
+}
 
 /* Responsive
 ==================================== */
 @media all and (max-width: $breakpoint) {
-  .Rtable--collapse  {
+  .table--collapse  {
     display: block;
-    > .Rtable-cell { width: 100% !important; }
+    > .table-cell { width: 100% !important; }
     > .first { padding: 0.8em 1.2em 0; }
     > .second { padding: 0.8em 1.2em 1.5em 2.5em; }
-    > .Rtable-cell--foot { margin-bottom: 1em; }
+    > .table-cell--foot { margin-bottom: 1em; }
   }
 }
-
-// Non-Flex modernizer fallback
-.no-flexbox .Rtable {
-  display: block;
-  > .Rtable-cell { width: 100%; }
-  > .Rtable-cell--foot { margin-bottom: 1em; }
-}
-
-// END - experiment
 
 // New
 .footnote-definition {

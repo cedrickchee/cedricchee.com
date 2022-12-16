@@ -107,45 +107,17 @@
 {% macro list_posts_by_year(pages) %}
     {% for year, posts in pages | group_by(attribute="year") %}
         <h2>{{ year }}</h2>
-
-        <!-- <div class="Rtable Rtable--2cols Rtable--collapse">
-            <div class="Rtable-cell first Rtable-cell--head"><h3>Eddard Stark</h3></div>
-            <div class="Rtable-cell second">Has a sword named Ice</div>
-            <div class="Rtable-cell">No direwolf</div>
-            <div class="Rtable-cell Rtable-cell--foot"><strong>Lord of Winterfell</strong></div>
-
-            <div class="Rtable-cell first Rtable-cell--head"><h3>Jon Snow</h3></div>
-            <div class="Rtable-cell second">Has a sword named Longclaw</div>
-            <div class="Rtable-cell">Direwolf: Ghost</div>
-            <div class="Rtable-cell Rtable-cell--foot"><strong>Knows nothing</strong></div>
-        </div> -->
-
-        <div class="Rtable Rtable--2cols Rtable--collapse">
+        <div class="table table--2cols table--collapse">
         {% for post in posts %}
             {%- if page.draft %}
                 {% continue %}
             {% endif -%}
-            <div class="Rtable-cell first Rtable-cell--head">{{ post.date | date(format="%b %e") }}</div>
-            <div class="Rtable-cell second">
+            <div class="table-cell first table-cell--head">{{ post.date | date(format="%b %e") }}</div>
+            <div class="table-cell second">
                 <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
             </div>
         {% endfor %}
         </div>
-
-        {#
-        <ul>
-        {% for post in posts %}
-            {%- if page.draft %}
-                {% continue %}
-            {% endif -%}
-            <li class="post-list">
-                <a href="{{ post.permalink | safe }}">
-                    <span class="post-date">{{ post.date | date(format="%Y-%m-%d") }}</span>
-                    <span class="post-list-title">{{ post.title }}</span></a>
-            </li>
-        {% endfor %}
-        </ul>
-        #}
     {% endfor %}
 {% endmacro list_posts %}
 
