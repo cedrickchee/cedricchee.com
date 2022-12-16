@@ -131,7 +131,7 @@ I worked on a variety of projects. Some reached completion, and some didn't. I d
 - Build a basic [multithreaded web server](https://github.com/cedrickchee/rust-webserver) from scratch (zero dependencies) using Rust and along the way, learn a bit about TCP and HTTP.
 - _*_ Implements Conway's Game of Life in Rust and WebAssembly.
 - Learn Rust by creating too many linked lists.
-- _*_ [Bitcask](https://github.com/cedrickchee/bitcask), a high-performance, networked, parallel and asynchronous key/value store (embedded database like SQLite) developed in Rust.
+- _*_ [KVS](https://github.com/cedrickchee/experiments/tree/main/rust/kvs), a high-performance, networked, parallel and asynchronous key/value store (embedded database like SQLite) developed in Rust.
 - [RNNoise](https://www.npmjs.com/package/rnnoise) is a Rust and Node.js bindings to Xiph's RNNoise denoising C library.
 - _*_ Deep dive into [Xi Editor](https://xi-editor.io) internals. Xi is a modern editor for the next 20 years. This exercise altered my appreciation for persistent rope data structure.
 - _*_ [You Don't Know Go, Yet book](https://ydkgo.netlify.app/) is a project for me to relearn Go from first principles by writing a book on it. I learned advanced Go stuffs in this study.
