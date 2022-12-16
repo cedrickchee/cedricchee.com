@@ -16,9 +16,10 @@ Source code for my personal website and blog. Crafted with :heart:
     <b><a href="README.md#customization">Customization</a></b>
 </p>
 
-<!--<p align="center">
-    <img src="https://raw.githubusercontent.com/cedrickchee/personal-website/gh-pages/assets/screen-shot.png" />
-</p>-->
+<p align="center">
+    <img src="https://raw.githubusercontent.com/cedrickchee/cedricchee.com/main/docs/screenshots/retromin-dark.png" width="400" />&nbsp;&nbsp;
+    <img src="https://raw.githubusercontent.com/cedrickchee/cedricchee.com/main/docs/screenshots/retromin-light.png" width="400" />
+</p>
 
 ## Features
 
