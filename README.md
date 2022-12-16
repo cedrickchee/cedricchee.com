@@ -23,9 +23,9 @@ Source code for my personal website and blog. Crafted with :heart:
 ## Features
 
 - Fast and lightweight, only ~10kB CSS before the content, images, and videos
-- Total page weight ~7kB
-- No JavaScript, no Web bundler :sunglasses:
-- Perfect [Lighthouse](https://pagespeed.web.dev/report?url=https%3A%2F%2Fcedricchee.com%2F), [YellowLabTools](https://yellowlab.tools/result/ggcp8oz56d), and [Observatory](https://observatory.mozilla.org/analyze/cedricchee.com) scores
+- Total page weight ~7kB (gzip compressed)
+- No unncessary JavaScript, no Web bundler :sunglasses:
+- Near perfect [Lighthouse](https://pagespeed.web.dev/report?url=https%3A%2F%2Fcedricchee.com%2F), [YellowLabTools](https://yellowlab.tools/result/ggcp8oz56d), and [Observatory](https://observatory.mozilla.org/analyze/cedricchee.com) scores (need 11ty improvements)
 - Netlify for hosting and deployment
 
 ## What is under the hood
