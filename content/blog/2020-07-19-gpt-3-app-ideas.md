@@ -7,6 +7,7 @@ date = 2020-07-19T01:09:00Z
 #slug = "future post"
 #path = "/launch"
 #draft = true
+aliases = ["2020/07/19/gpt-3-app-ideas"]
 
 [taxonomies]
 tags = ["nlp", "transformer", "gpt-3"]
