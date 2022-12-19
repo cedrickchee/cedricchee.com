@@ -23,10 +23,12 @@ Feel free to follow/contact me on any of the following services:
 | **DEV** | [DEV profile] | A community of software developers |
 | **YouTube** | [Cedric's Slice of Life] | YouTube channel of programming and personal streams. |
 | **Fast.AI** | [fast.ai/u/cedric] | Discourse on AI and deep learning. |
-| **Patreon** | [Patreon] | Support my open source works. |
+| **Reddit** | [/r/u/cedrickchee] | Public discussions. |
+| **Patreon** | [www.patreon.com/cedrickchee] | Support my open source works. |
 | **Medium** | [medium.com/@cedric_chee] | Writing. I don't really use this. |
 | **Instagram** | [instagram.com/cedrickchee] | Photos. I don't really use this. |
 | **IRC** | [irc.libera.chat/#cedrickchee] | Chat. I don't really use this. |
+| **Twitch** | [two_highflush] | Live streaming of programming. I don't really use this. |
 
 [github.com/cedrickchee]: https://github.com/cedrickchee
 [twitter.com/cedric_chee]: https://twitter.com/cedric_chee
@@ -39,7 +41,9 @@ Feel free to follow/contact me on any of the following services:
 [DEV profile]: https://dev.to/cedrickchee
 [Cedric's Slice of Life]: https://www.youtube.com/@CedricChee/videos
 [fast.ai/u/cedric]: https://forums.fast.ai/u/cedric/summary
-[Patreon]: https://www.patreon.com/cedrickchee
+[/r/u/cedrickchee]: https://www.reddit.com/user/cedrickchee
+[www.patreon.com/cedrickchee]: https://www.patreon.com/cedrickchee
 [medium.com/@cedric_chee]: https://medium.com/@cedric_chee
 [instagram.com/cedrickchee]: https://instagram.com/cedrickchee
 [irc.libera.chat/#cedrickchee]: irc://irc.libera.chat/#cedrickchee
+[two_highflush]: https://www.twitch.tv/two_highflush
