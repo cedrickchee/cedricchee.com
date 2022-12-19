@@ -88,6 +88,7 @@ menu_items = [
     {name = "about", url = "$BASE_URL/about/", show_in_footer = false},
     
     # set newtab to true to make the link open in new tab
+    {name = "contact", url = "$BASE_URL/contact/", show_in_footer = true, footer_only = true},
     {name = "github", url = "https://github.com/cedrickchee", newtab = true, show_in_footer = true},
     {name = "twitter", url = "https://twitter.com/cedric_chee", newtab = true, show_in_footer = true},
     {name = "mastodon", url = "https://mstdn.io/@cedric_chee", newtab = true, show_in_footer = true},
