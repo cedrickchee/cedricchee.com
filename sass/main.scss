@@ -164,6 +164,11 @@ pre {
   // END - New styles
 }
 
+table, th, td {
+  // fix: break long words
+  overflow-wrap: break-word;
+}
+
 .content {
   display: flex;
   flex-direction: column;
