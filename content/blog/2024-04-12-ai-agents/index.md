@@ -46,7 +46,7 @@ Agents have become more part of the public narrative. Bill Gates in his Nov 2023
 
 ## AI agent competitions are rising
 
-MetaGPT -> AgentCoder -> Devin/OpenDevin/Devika -> SWE-Agent -> AutoCodeRover
+MetaGPT → AgentCoder → Devin → SWE-Agent → OpenDevin/Devika → AutoCodeRover → Cosine
 
 LLM-based agents are still in their infancy, and there’s a lot of room for improvement. Agent or multi-agents are still in the very early research/prototype stage.
 
@@ -58,9 +58,9 @@ I believe that AI agents will significantly improve in the near future, but the 
 
 Agentic workflows have the potential to unlock capabilities beyond what is possible with the current approach of prompting models for one-shot/zero-shot/CoT generations. The tools to create agents are improving rapidly. The architecture/pattern is improving with ideas such as Karpathy's LLM Operating System design. The comparison between traditional LLMs and the iterative, agentic approach is interesting whether or not there will be a pivotal shift in AI application.
 
-[![What's next for AI agentic workflows ft. Andrew Ng](https://img.youtube.com/vi/sal78ACtGTc/0.jpg)](https://www.youtube.com/watch?v=sal78ACtGTc)
+{{ youtube(id="sal78ACtGTc", autoplay=false, class="youtube") }}
 
-(Andrew Ng speaks about what's next for AI agentic workflows; planning and multi-agent collaboration. Planning is like the "ChatGPT moment" for AI agent.)
+<sup>Andrew Ng speaks about what's next for AI agentic workflows; planning and multi-agent collaboration. Planning is like the "ChatGPT moment" for AI agent.</sup>
 
 The field is quickly pivoting in a world where **foundation models are looking more and more commodity**. A huge amount of **gain is going to happen from how do you use foundation models** as the well-learned behavioral cloner to **go solve agents**.
 
