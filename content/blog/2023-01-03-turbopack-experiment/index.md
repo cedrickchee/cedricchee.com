@@ -104,4 +104,6 @@ event - updated in 661ms
 The Next.js v13 development server is now powered by Turbopack!
 Startup and updates should both be near-instant. The larger the application, the larger the improvement will be.
 
+If you want to learn how to use Turbopack and Turborepo for creating and managing your monorepo, check out [my next blog post](@/blog/2023-01-03-turborepo-monorepo/index.md).
+
 Cool. That's it for now.
