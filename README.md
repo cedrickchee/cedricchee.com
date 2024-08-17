@@ -5,15 +5,15 @@ Source code for my personal website and blog. Crafted with :heart:
 ---
 
 <p align="center">
-    <b><a href="README.md#features">Features</a></b>
+    <b><a href="#features">Features</a></b>
     |
-    <b><a href="README.md#what-is-under-the-hood">What is under the hood</a></b>
+    <b><a href="#what-is-under-the-hood">What is under the hood</a></b>
     |
-    <b><a href="README.md#quick-start">Quick Start</a></b>
+    <b><a href="#quick-start">Quick Start</a></b>
     |
-    <b><a href="README.md#installation">Installation</a></b>
+    <b><a href="#installation">Installation</a></b>
     |
-    <b><a href="README.md#customization">Customization</a></b>
+    <b><a href="#customization">Customization</a></b>
 </p>
 
 <p align="center">
@@ -173,7 +173,6 @@ All pages extend to `base.html`, and you can customize them as need.
 
     If you are serving your site with NGINX, you can pre gzip your content.
 
-(_WIP_)
 
 ---
 
