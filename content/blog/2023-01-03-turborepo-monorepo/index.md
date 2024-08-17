@@ -1,7 +1,7 @@
 +++
 title = "Creating a new monorepo with Turborepo"
 description = "Learn all about your new monorepo, and how Turborepo makes handling your tasks easier."
-date = 2023-09-01T00:00:00Z
+date = 2023-01-03T00:00:00Z
 #updated = 2022-11-10
 #weight = 0
 #slug = "future post"
