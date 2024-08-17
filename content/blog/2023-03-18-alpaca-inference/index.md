@@ -19,7 +19,7 @@ ToC = false
 
 Stanford Alpaca is an instruction-following language model, fine-tuned from the LLaMA-7B model.
 
-The inference code is using [Alpaca Native](https://huggingface.co/chavinlo/alpaca-native) model, which was fine-tuned using the original [tatsu-lab/stanford_alpaca]( https://github.com/tatsu-lab/stanford_alpaca) repository. The fine-tuning process does not use LoRA, unlike [tloen/alpaca-lora](https://github.com/tloen/alpaca-lora).
+The inference code is using [Alpaca Native](https://huggingface.co/chavinlo/alpaca-native) model, which was fine-tuned using the original [tatsu-lab/stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca) repository. The fine-tuning process does not use LoRA, unlike [tloen/alpaca-lora](https://github.com/tloen/alpaca-lora).
 
 ### Hardware and software requirements
 
@@ -97,5 +97,8 @@ How to use.
 1. What if I want to fine-tune Stanford Alpaca myself?
     
     The Replicate team have repeated the training process and [published a tutorial](https://replicate.com/blog/replicate-alpaca) about how they did it. It cost less than $100.
+
+
+Update: I've written a simpler tutorial, ["Creating a chatbot using Alpaca native and LangChain".](@/blog/2023-03-22-alpaca-native-langchain-chatbot-tutorial/index.md)
 
 Original text: [GitHub Gist](https://gist.github.com/cedrickchee/3be95c8ab9f38132382737783bd5d55e)
