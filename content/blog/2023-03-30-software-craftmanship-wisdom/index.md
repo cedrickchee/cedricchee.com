@@ -1,6 +1,6 @@
 +++
 title = "What I've Learned in 45 Years in the Software Industry"
-description = ""
+description = "Software craftmanship and engineering wisdom."
 date = 2023-03-30T00:00:00Z
 #updated = 2022-11-10
 #weight = 0
