@@ -12,7 +12,7 @@ date = 2024-07-14T00:00:00Z
 tags = ["llm", "gpt", "ai_coding", "ai"]
 
 [extra]
-ToC = false
+ToC = true
 +++
 
 ## Introduction
@@ -335,8 +335,8 @@ nums2 = [1, 1, 1]
 print(power_of_heroes(nums2))  # Output: 7
 ```
 
-#### Reference
-
 [^1]: [LiveCodeBench: Holistic and Contamination-Free Evaluation of Large Language Models for Code](https://livecodebench.github.io/)
+
+---
 
 Original text: [GitHub Gist](https://gist.github.com/cedrickchee/656c116e416dc70622aca68eb648e952)

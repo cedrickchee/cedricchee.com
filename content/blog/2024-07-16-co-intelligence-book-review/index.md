@@ -12,7 +12,7 @@ date = 2024-07-16T00:00:00Z
 tags = ["llm", "books", "ai"]
 
 [extra]
-ToC = false
+ToC = true
 +++
 
 ## In 200 Words

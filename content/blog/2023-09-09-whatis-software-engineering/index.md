@@ -12,7 +12,7 @@ date = 2023-09-09T00:00:00Z
 tags = ["software_engineering", "programming"]
 
 [extra]
-ToC = false
+ToC = true
 +++
 
 I was not formally introduced to software engineering when I was in college. Today I took the opportunity to finally learn the definition of software engineering, which I don't believe can be properly defined after being exposed to it so much in my career. However, I want to put aside my bias and start understanding what is software engineering is really about with the begineer's mind.

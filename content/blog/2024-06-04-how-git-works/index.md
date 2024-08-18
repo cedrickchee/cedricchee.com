@@ -45,7 +45,7 @@ This is one part of git that seem scary (losing your work) are pretty straightfo
 
 ## The cheat sheet
 
-The zine also comes with a free cheat sheet. You can download it here: https://wizardzines.com/git-cheat-sheet.pdf
+The zine also comes with a free cheat sheet. You can download it [here](https://wizardzines.com/git-cheat-sheet.pdf) (PDF).
 
 ---
 
