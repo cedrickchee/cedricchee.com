@@ -12,10 +12,8 @@ date = 2023-03-13T00:00:00Z
 tags = ["llm", "llama_model", "gpt", "ai"]
 
 [extra]
-ToC = false
+ToC = true
 +++
-
-Original text: [GitHub Gist](https://gist.github.com/cedrickchee/e8d4cb0c4b1df6cc47ce8b18457ebde0)
 
 ## The large language models usability
 
@@ -270,3 +268,7 @@ main:    total time =  9013.06 ms
 ```
 
 We're done. Have fun prompting the model!
+
+---
+
+Original text: [GitHub Gist](https://gist.github.com/cedrickchee/e8d4cb0c4b1df6cc47ce8b18457ebde0)
