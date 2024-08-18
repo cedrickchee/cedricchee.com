@@ -12,7 +12,7 @@ date = 2024-01-22T00:00:00Z
 tags = ["llm", "ai_coding", "programming", "ai"]
 
 [extra]
-ToC = false
+ToC = true
 +++
 
 ## What Defines an Advanced AI Coding Assistant?
