@@ -9,7 +9,7 @@ date = 2024-06-10T00:00:00Z
 #draft = true
 
 [taxonomies]
-tags = ["programmming", "c"]
+tags = ["programming", "c"]
 
 [extra]
 ToC = false
