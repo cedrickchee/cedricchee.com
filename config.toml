@@ -85,14 +85,15 @@ menu_items = [
     {name = "projects", url = "https://github.com/cedrickchee#projects", newtab = true, show_in_footer = false},
     #{name = "talks", url = "$BASE_URL/talks/", show_in_footer = false},
     # {name = "now", url = "$BASE_URL/now/", show_in_footer = false},
+    {name = "wiki", url = "https://wiki.cedricchee.com/", newtab = true, show_in_footer = true},
     {name = "about", url = "$BASE_URL/about/", show_in_footer = false},
     
     # set newtab to true to make the link open in new tab
     {name = "contact", url = "$BASE_URL/contact/", show_in_footer = true, footer_only = true},
     {name = "github", url = "https://github.com/cedrickchee", newtab = true, show_in_footer = true},
     {name = "twitter", url = "https://twitter.com/cedric_chee", newtab = true, show_in_footer = true},
-    {name = "mastodon", url = "https://mstdn.io/@cedric_chee", newtab = true, show_in_footer = true},
-    {name = "linkedin", url = "https://www.linkedin.com/in/cedricchee", newtab = true, show_in_footer = true},
+    {name = "mastodon", url = "https://mstdn.io/@cedric_chee", newtab = true, show_in_footer = true, footer_only = true},
+    {name = "linkedin", url = "https://www.linkedin.com/in/cedricchee", newtab = true, show_in_footer = true, footer_only = true},
     {name = "rss", url = "$BASE_URL/atom.xml", show_in_footer = true},
 ]
 
