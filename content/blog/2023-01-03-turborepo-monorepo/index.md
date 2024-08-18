@@ -145,7 +145,7 @@ Turborepo helps by making running tasks simpler and _much_ more efficient.
 
 Let's take a look inside our root `package.json`:
 
-```json filename="package.json"
+```json
 {
   "scripts": {
     "build": "turbo run build",
@@ -157,7 +157,7 @@ Let's take a look inside our root `package.json`:
 
 We've got three tasks specified here in `scripts` which use `turbo run`. You'll notice that each of them is specified in `turbo.json`:
 
-```json filename="turbo.json"
+```json
 {
   "pipeline": {
     "build": {
@@ -181,7 +181,9 @@ What we're seeing here is that we've _registered_ three tasks with `turbo` - `li
 
 To see this in action, let's add a script to the root `package.json`:
 
-```diff filename="package.json"
+```diff
+# filename: package.json
+
 {
   "scripts": {
     "build": "turbo run build",
@@ -258,7 +260,9 @@ You'll notice several things happen in the terminal.
 
 The scripts that each run come from each workspace's `package.json`. Each workspace can optionally specify its own `lint` script:
 
-```json filename="apps/web/package.json"
+```json
+// filename: apps/web/package.json
+
 {
   "scripts": {
     "lint": "next lint"
@@ -266,7 +270,9 @@ The scripts that each run come from each workspace's `package.json`. Each worksp
 }
 ```
 
-```json filename="apps/docs/package.json"
+```json
+// filename: apps/docs/package.json
+
 {
   "scripts": {
     "lint": "next lint"
@@ -274,7 +280,9 @@ The scripts that each run come from each workspace's `package.json`. Each worksp
 }
 ```
 
-```json filename="packages/ui/package.json"
+```json
+// filename: packages/ui/package.json
+
 {
   "scripts": {
     "lint": "eslint *.ts*"
@@ -338,8 +346,8 @@ It had saved the logs from the previous run, so it just replayed them.
 
 Let's try changing some code to see what happens. Make a change to a file inside `apps/docs`:
 
-```diff filename="apps/docs/pages/index.tsx"
-// apps/docs/pages/index.tsx
+```diff
+// filename: apps/docs/pages/index.tsx
 
 import { Button } from "ui";
 export default function Docs() {
@@ -467,7 +475,9 @@ You'll see similar outputs to when we ran our lint script. Only `apps/docs` and 
 
 Take a look inside `build` in `turbo.json`. There's some interesting config there.
 
-```json filename="turbo.json"
+```json
+// filename: turbo.json
+
 {
   "pipeline": {
     "build": {
@@ -565,7 +575,9 @@ Try quitting out of the script, and re-running it. You'll notice we don't go `FU
 
 Take a look at `turbo.json`:
 
-```json filename="turbo.json"
+```json
+// filename: turbo.json
+
 {
   "pipeline": {
     "dev": {
