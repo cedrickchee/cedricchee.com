@@ -10,7 +10,7 @@ date = 2020-07-19T01:09:00Z
 aliases = ["2020/07/19/gpt-3-app-ideas"]
 
 [taxonomies]
-tags = ["nlp", "transformer", "gpt-3"]
+tags = ["nlp", "transformer", "gpt-3", "llm", "ai"]
 
 [extra]
 ToC = false
