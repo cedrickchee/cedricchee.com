@@ -1,7 +1,7 @@
 +++
 title = "Recent Posts"
 # number of pages to paginate by
-paginate_by = 10
+paginate_by = 20
 
 # sorting order for pagination
 sort_by = "date"
