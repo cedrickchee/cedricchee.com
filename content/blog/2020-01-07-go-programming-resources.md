@@ -1,6 +1,6 @@
 +++
 title = "Go Programming Resources"
-#description = "This is a showcase post."
+description = "There are many good Go programming courses and books. But over the years, my go-to have been \"Learn Go with TDD\" course and Effective Go book."
 date = 2020-01-07T02:56:00Z
 #updated = 2022-11-10
 #weight = 0
@@ -9,13 +9,15 @@ date = 2020-01-07T02:56:00Z
 #draft = true
 
 [taxonomies]
-tags = ["machine learning", "pytorch"]
+tags = ["go", "programming"]
 
 [extra]
 ToC = false
 +++
 
-Some online resources that I found and are particularly useful in my journey re-learning Go programming since the mid of last year (2019), after the last time I touched Go programming in 2015. I hope you find this useful as well. It goes without saying. YMMV.
+Some online resources that I found and are particularly useful in my journey re-learning Go programming since the mid of last year (2019), after the last time I touched Go programming in 2015.
+
+There are many good Go programming courses and books. But over the years, my go-to have been "Learn Go with TDD" course and Effective Go book.
 
 ## Courses
 
@@ -36,3 +38,5 @@ Some online resources that I found and are particularly useful in my journey re-
 - ~~[Standard Go Project Layout](https://github.com/golang-standards/project-layout). It covers:~~
   - ~~Go code style guidelines and recommendations.~~
   - ~~Naming and organizing packages as well as other code structure recommendations.~~
+
+I hope you find this useful as well. It goes without saying. YMMV.
