@@ -1,6 +1,6 @@
 +++
 title = "Some Reflection on What OpenAI o1 Reasoning Launch Means"
-description = ""
+description = "o1 \"think through\" problems before providing solutions. o1 is not GPT. It excels in tasks requiring planning and iteration. o1 doesn't surpass GPT-4o in writing creativity. o1 successfully solved the \"river crossing\" riddle. This unlocks a new paradigm of model pre-training."
 date = 2024-09-13T14:00:00Z
 #updated = 2022-11-10
 #weight = 0
