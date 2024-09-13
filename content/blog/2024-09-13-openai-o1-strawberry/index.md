@@ -1,6 +1,6 @@
 +++
 title = "Some Reflection on What OpenAI o1 Reasoning Launch Means"
-description = "o1 \"think through\" problems before providing solutions. o1 is not GPT. It excels in tasks requiring planning and iteration. o1 doesn't surpass GPT-4o in writing creativity. o1 successfully solved the \"river crossing\" riddle. This unlocks a new paradigm of model pre-training."
+description = "o1 \"think through\" problems before providing solutions. o1 is not GPT. It excels in tasks requiring planning and iteration. o1 doesn't surpass GPT-4o in writing creativity. o1 successfully solved the \"river crossing\" riddle and a crossword puzzle. This unlocks a new paradigm of model pre-training. o1 is great in many ways but it isn't superior in all areas."
 date = 2024-09-13T14:00:00Z
 #updated = 2022-11-10
 #weight = 0
@@ -39,8 +39,6 @@ Given two common riddle challenges, "river crossing" and "there are six people i
        caption_position="center",
        caption="Figure 1: GPT-4o unable to solve the riddle"
        caption_style="font-weight: normal; font-style: normal;") }}
-
-Figure 1: GPT-4o unable to solve the riddle.
 
 If you are doing problems that don't benefit from planning a solution, you may not see improvement.
 
