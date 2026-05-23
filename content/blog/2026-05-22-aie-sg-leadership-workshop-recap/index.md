@@ -890,14 +890,14 @@ Speaker: Geoff Huntley, independent
 - Compiler feedback and strong type systems create useful back pressure against hallucination.
 - Open source is less attractive when you can generate first-party code and own the supply chain.
 - Is software still investable?
-- **Removing waste from your systems and process is bigger accelerator than AI**
-- SAP Concur org chart - why would you transform 6800 employees? (more: https://ghuntley.com/ngmi/)
-- Software engineers - get them to build a coding agent! (more: https://ghuntley.com/agent/)
+- **Removing waste from your systems and process is bigger accelerator than AI.**
+- SAP Concur org chart - why would you transform 6800 employees? (more: [https://ghuntley.com/ngmi/](https://ghuntley.com/ngmi/))
+- Software engineers - get them to build a coding agent! (more: [https://ghuntley.com/agent/](https://ghuntley.com/agent/))
 - Ideas are everything now, ideas are now execution...
 - Erasure of identity functions
 - Beware of the Simon Willison's lethal trifecta; this is not solved.
 - Programming languages are now fungible
-  - https://cursed-lang.org/
+  - [https://cursed-lang.org/](https://cursed-lang.org/)
   - On getting back into Haskell, formal specification
 - Software factory
   - compiler feedback vs human feedback (graph)
